@@ -50,7 +50,7 @@
                 <p id="call">Call Today</p>
                 <p id="number">888-585-5133</p>
                 <p id="hours">Monday-Friday, 9am-7pm EST</p>
-                <a id="apply" href="#https://app.usmedcapital.com/#/"
+                <a id="apply" href="https://app.usmedcapital.com/#/"
                     >Apply Online</a
                 >
                 <a href="https://app.usmedcapital.com/#/"
@@ -115,22 +115,4 @@
             <p>© 2022 US MED Capital All Rights Reserved.</p>
         </footer>
     </body>
-
-    <script>
-        const findOverflows = () => {
-            const documentWidth = document.documentElement.offsetWidth;
-
-            document.querySelectorAll("*").forEach((element) => {
-                const box = element.getBoundingClientRect();
-
-                if (box.left < 0 || box.right > documentWidth) {
-                    console.log(element);
-                    element.style.border = "1px solid red";
-                }
-            });
-        };
-
-        // Execute findOverflows to find overflows on the page.
-        // findOverflows();
-    </script>
 </html>
